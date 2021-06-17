@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/iara4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+}
+header{
+        background-color: #000000AA;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10vw;
+    }
+    .logo img{
+        user-select: none;
+        width: 120px;
+    }
+    
+    .links ul{
+        display: flex;
+        gap: 20px;
+        color: white;
+        list-style-type: none;
+    }
+    
+    .links a {
+        color: white;
+        text-decoration: none;
+        font-size: 24px;
+        user-select: none;
+        transition: all 500ms;
+    }
+    
+    .links a:hover{
+        color: red;
+    }
+
+main {
+    font-family: helvetica;
+    padding: 25vh 10vw;
+    flex-grow: 1;
+    color: black
+} 
+
+main h1{
+    position: relative;
+    font-size: 100px;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+}
+main h1::after{
+    content: "Curupira";
+    -webkit-text-stroke: black;
+    color: transparent;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: -1;
+}
+
+
+.segundalinha h2{
+        float: left;
+        margin: 0px 30px 10px 0;
+        transform: rotate(270deg);
+        color: red;
+        font-size: 25px;
+        padding-top: 100px;
+        
+        
+        
+}
+.segundalinha p {
+    font-size: 20px ;
+    font-weight: 200;
+    max-width: 400px;
+
+}
+
+.creditos hr{
+    border-color: red;
+    color: red;
+}
+.creditos ul{
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+    footer{
+        height: 40px;
+        text-align: center;
+        color: white;
+    }
